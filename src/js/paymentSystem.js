@@ -17,9 +17,9 @@ export default class PaymentSystem {
       const allowedLength = card.ln;
 
       if (
-        re.exec(input) &&
-        this.input.length > 12 &&
-        this.checkLength(allowedLength)
+        re.exec(input)
+        && this.input.length > 12
+        && this.checkLength(allowedLength)
       ) {
         match.push(card);
       }
